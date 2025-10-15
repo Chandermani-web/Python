@@ -1,0 +1,18 @@
+Name: chandermani
+Age: 20
+Address: Ward no.4, New Panjabi Colony, Sampla, Rohtak, Haryana-124501
+Email: chandermanimishra91@gmail.com
+Phone: 8607653657
+----------------------------------------
+Name: Ankit Kandwal
+Age: 24
+Address: Bahadurgarh
+Email: sharmaankit@gmail.comm
+Phone: 7056363439
+----------------------------------------
+Name: Amit Kumar
+Age: 21
+Address: Dwarka
+Email: amitkumar@gmail.com
+Phone: 9090986989
+----------------------------------------
