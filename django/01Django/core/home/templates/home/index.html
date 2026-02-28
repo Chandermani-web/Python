@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Django + Tailwind</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+    <div class="w-full max-w-4xl bg-white shadow-lg rounded-xl p-6">
+      <h1 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+        This template is returned by Django server
+      </h1>
+
+      <div class="overflow-x-auto">
+        <table class="min-w-full border border-gray-200 rounded-lg">
+          <thead class="bg-gray-800 text-white">
+            <tr>
+              <th class="px-4 py-3 text-left">#</th>
+              <th class="px-4 py-3 text-left">First</th>
+              <th class="px-4 py-3 text-left">Last</th>
+              <th class="px-4 py-3 text-left">Age</th>
+            </tr>
+          </thead>
+
+          <tbody class="divide-y divide-gray-200">
+            {% for people in peoples %}
+            <tr class="hover:bg-gray-100 transition">
+              <td class="px-4 py-2 font-medium text-gray-700">
+                {{ forloop.counter }}
+              </td>
+              <td class="px-4 py-2">{{ people.first }}</td>
+              <td class="px-4 py-2">{{ people.last }}</td>
+              <td class="px-4 py-2">{{ people.age }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script>
+      console.log("this is a django server");
+    </script>
+  </body>
+</html>
